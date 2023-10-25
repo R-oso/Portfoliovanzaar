@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import projectData from "../assets/projectData.json";
+import projectData from "/assets/projectData.json";
 import projectsCSS from "../css/projects.module.css";
 
 const Projects = () => {
