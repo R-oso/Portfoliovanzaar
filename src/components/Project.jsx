@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import projectCSS from "../css/project.module.css";
 
-import projectData from "/assets/projectData.json?url";
 import BasicLayout from "./layouts/BasicLayout";
 import PhotoLayout from "./layouts/PhotoLayout";
 import VideoLayout from "./layouts/VideoLayout";

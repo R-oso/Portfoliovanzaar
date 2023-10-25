@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import projectData from "/assets/projectData.json?url";
 import projectsCSS from "../css/projects.module.css";
 
 const Projects = () => {
