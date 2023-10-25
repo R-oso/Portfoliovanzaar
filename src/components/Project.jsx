@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import projectCSS from "../css/project.module.css";
 
-import projectData from "../assets/projectData.json";
+import projectData from "/assets/projectData.json?url";
 import BasicLayout from "./layouts/BasicLayout";
 import PhotoLayout from "./layouts/PhotoLayout";
 import VideoLayout from "./layouts/VideoLayout";
@@ -15,12 +15,25 @@ const Project = () => {
   const { layoutType } = location.state || {};
 
   useEffect(() => {
-    // Find the project data that matches the projectId
-    const project = projectData.find((project) => project.name === projectName);
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/assets/ProjectData.json");
+        if (response.ok) {
+          const projectData = await response.json();
+          // Find the project data that matches the projectId
+          const project = projectData.find((project) => project.name === projectName);
+          // Set the project data in state
+          setCurrentProjectData(project);
+        } else {
+          console.error("Failed to fetch project data.");
+        }
+      } catch (error) {
+        console.error("An error occurred while fetching project data:", error);
+      }
+    };
 
-    // Set the project data in state
-    setCurrentProjectData(project);
-  }, [projectName, projectData]);
+    fetchData();
+  }, [projectName]);
 
   if (!currentProjectData) {
     // You can render a loading state or handle the case when data is not available yet
