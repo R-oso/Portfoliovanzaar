@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Tea Party",
+    "name": "teaparty",
+    "layoutType": "video",
+    "description": "TeaParty is not just any band, it's a unique concept band composed of five enthusiastic girls. 'Having a cup of tea is like getting a cozy hug, going to a party is like being immersed in chaos; and this is how we feel as TeaParty.",
+    "description2": "Our core concept is to embrace your inner child while balancing your adult side and reflecting on yourself as you grow. In this society, there is a pressure to have everything under control and a clear idea of your future by the time you turn 20. However, while pursuing these expectations, young adults often feel insecure and struggle to hear their inner child's voices. Societal norms dictate how we should behave, including studying hard, getting a job, and settling down in a relationship. While some find comfort in following these norms, they can be restrictive and limThe banit young adults from pursuing their passions. The pressure to conform can be intense, leading to negative opinions and isolation. It is important to remember that societal norms are not set in stone and can be challenged and redefined. Young adults have the power to inspire others and create a more accepting and diverse society. Ultimately, the decision to conform or not is personal, and individuals should stay true to their values and beliefs. With courage and determination, young adults can break free and chart their own unique path in life. Our concept encourages embracing our inner child, being unafraid, and thinking differently.",
+    "info": "2022 Music video \n art direction / production \n",
+    "images": ["Teaparty_visual.png", "Teaparty_extras.png", "Teaparty_cover.png"],
+    "carousel": "",
+    "coverImage": "Teaparty_teacup.png",
+    "videos":["Teaparty_musicvideo.mp4", "Teaparty_gif.mp4"],
+    "links":"Listen to our other song on SoundCloud"
+  },
+  {
+    "id": 2,
+    "title": "Buzzle Puzzle",
+    "name": "buzzlepuzzle",
+    "layoutType": "video",
+    "description": "What is body language? You could say it is an unconscious and conscious way of communicating our feelings, moods, and behaviors through movements and postures. We see it every day but we can’t always understand it. Trained specialists like psychologists and police officers are working with body language every day and know how the body works. They see our habits with their eyes, they read our body language and make conclusions. Except, not everybody has a trained eye for body language.",
+    "description2": "Everybody has different characteristics and nobody is developed the same.We are all different in social situations, introverts may have a harder time at a party than extroverted people but they will thrive in other situations. It can be difficult because you don’t always understand others well. It is difficult to empathize with how someone else thinks or feels. Conversely, people often do not understand how you experience things. We want to make the things that you usually don’t notice visible and learn more about our body (languages) that we see, feel, and use every day. In this society, the expectations are high and social skills are required. Not everybody can live up to the standards of social interaction. We see our game as a helpful guide to show how a human communicates. Now, this does not mean that all people express their feelings this way, we’re giving a broad direction where there can be speculation and imagination. Our goal is to understand each other better. People can become more confident in expressing themselves and understanding someone else’s feelings. This game is for people who struggle or want to learn more about social situations and how others/you are thinking or feeling. Buzzle puzzle is raising awareness and gives educational insights into human body language.",
+    "info": "",
+    "images": [""],
+    "carousel": ["Buzzle_foto1.png", "Buzzle_foto2.png", "Buzzle_foto3.png", "Buzzle_foto4.png", "Buzzle_foto5.png", "Buzzle_foto6.png"],
+    "coverImage": "Buzzle_cover.png",
+    "videos":["Buzzle_video.mp4"],
+    "links":""
+  },
+  {
+    "id": 3,
+    "title": "Project",
+    "name": "project",
+    "layoutType": "video",
+    "description": "",
+    "info": "",
+    "images": ["image4.jpg", "image5.jpg", "image6.jpg"],
+    "coverImage": "",
+    "videos":[""],
+    "links":""
+  },
+  {
+    "id": 4,
+    "title": "Project",
+    "name": "project",
+    "layoutType": "video",
+    "description": "",
+    "info": "",
+    "images": ["image4.jpg", "image5.jpg", "image6.jpg"],
+    "coverImage": "",
+    "videos":[""],
+    "links":""
+  },
+  {
+    "id": 5,
+    "title": "Project",
+    "name": "project",
+    "layoutType": "video",
+    "description": "",
+    "info": "",
+    "images": ["image4.jpg", "image5.jpg", "image6.jpg"],
+    "coverImage": "",
+    "videos":[""],
+    "links":""
+  }
+]

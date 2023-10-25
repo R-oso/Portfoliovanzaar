@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Helvetica_light";
+  src: url("/src/fonts/Helvetica-Light.ttf") format("opentype");
+}
+
+.section_2 {
+  margin-top: 7vh;
+}
+
+.section_3 {
+  display: flex;
+  justify-content: center;
+}
+
+.section_4 {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.section_5 {
+  height: 100px;
+  margin-bottom: 35vw;
+}
+
+.image {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+.images {
+  margin-top: 35vh;
+  margin-bottom: 6vh;
+  width: 31vw;
+  height: auto;
+}
+
+.gif {
+  margin-top: 260px;
+  width: 600px;
+  height: auto;
+}
+
+.par2 {
+  font-size: 1em;
+}
+
+.links {
+  margin-left: 1.5vw;
+  font-family: "Helvetica_light";
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  color: red;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .section_4 {
+    margin-top: 35vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-bottom: 6vh;
+    gap: 20px;
+  }
+
+  .images {
+    width: 70vw;
+    margin-top: 10px;
+  }
+
+  .links {
+    margin-left: 5vw;
+  }
+}
