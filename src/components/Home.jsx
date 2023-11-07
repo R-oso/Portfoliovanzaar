@@ -6,6 +6,7 @@ import HomeCSS from "../css/home.module.css";
 // Component imports
 import Logo from "./Logo";
 import Navbar from "./Navbar";
+import Background from "./Background";
 
 const Home = () => {
   const matterContainerRef = useRef(null);
@@ -27,8 +28,13 @@ const Home = () => {
 
   return (
     <div className={HomeCSS.app}>
-      {logoVisible && <Navbar onLinkClick={handleLinkClick} matterContainerRef={matterContainerRef} />}
-      {logoVisible && <Logo matterContainerRef={matterContainerRef} logoVisible={logoVisible} />}
+      <div className={HomeCSS.background_container}>
+        <Background />
+      </div>
+
+      <div className={HomeCSS.navbar_container}>
+        <Navbar onLinkClick={handleLinkClick} matterContainerRef={matterContainerRef} />
+      </div>
     </div>
   );
 };
