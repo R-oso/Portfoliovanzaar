@@ -1,6 +1,19 @@
 .app {
   margin: 0;
   padding: 0;
-  width: fit-content;
-  height: 0px;
+}
+
+.background_container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.navbar_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
