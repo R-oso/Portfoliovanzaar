@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import projectsCSS from "../css/projects.module.css";
+import Leftside from "./Leftside";
+import Rightside from "./Rightside";
 
 const Projects = () => {
   const [projectData, setProjectData] = useState([]);
@@ -20,24 +22,21 @@ const Projects = () => {
       }
     };
 
-    fetchData(); // Call the fetchData function when the component mounts
+    fetchData();
   }, []);
+
+  // Split projectData into two arrays
+  const halfIndex = Math.ceil(projectData.length / 2);
+  const leftSideData = projectData.slice(0, halfIndex);
+  const rightSideData = projectData.slice(halfIndex);
+
   return (
     <section className={projectsCSS.section}>
-      <h1>PROJECTS FAM</h1>
+      <Leftside leftSideData={leftSideData} />
       <Link to="/">
-        <p>go back joe </p>
+        <img src="/shapeprojectpage.png" alt="Absolute Positioned Image" className={projectsCSS.return_image} />
       </Link>
-
-      <ul>
-        {projectData.map((project) => (
-          <li key={project.id}>
-            <Link to={`/projects/${project.name}`} state={{ layoutType: project.layoutType }}>
-              {project.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <Rightside rightSideData={rightSideData} />
     </section>
   );
 };
