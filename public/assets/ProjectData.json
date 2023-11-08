@@ -14,8 +14,23 @@
     "videos":["Teaparty_musicvideo.mp4", "Teaparty_gif.mp4"],
     "links":"Listen to our other song on SoundCloud"
   },
+
   {
     "id": 2,
+    "title": "Analog photos",
+    "name": "analogphotos",
+    "layoutType": "photo",
+    "description": "",
+    "info": "2022 project",
+    "images": [""],
+    "link": "Analog_britt.jpg",
+    "coverImage": "",
+    "videos":[""],
+    "links":"Listen to our other song on SoundCloud"
+  },
+ 
+  {
+    "id": 3,
     "title": "Buzzle Puzzle",
     "name": "buzzlepuzzle",
     "layoutType": "video",
@@ -29,8 +44,9 @@
     "videos":["Buzzle_video.mp4"],
     "links":""
   },
+
   {
-    "id": 3,
+    "id": 4,
     "title": "Street Harassment",
     "name": "streetharassment",
     "layoutType": "basic",
@@ -38,30 +54,6 @@
     "info": "2022 project",
     "images": ["image4.jpg", "image5.jpg", "image6.jpg"],
     "link": "Street_link.png",
-    "coverImage": "",
-    "videos":[""],
-    "links":""
-  },
-  {
-    "id": 4,
-    "title": "Project",
-    "name": "project",
-    "layoutType": "video",
-    "description": "",
-    "info": "",
-    "images": ["image4.jpg", "image5.jpg", "image6.jpg"],
-    "coverImage": "",
-    "videos":[""],
-    "links":""
-  },
-  {
-    "id": 5,
-    "title": "Project",
-    "name": "project",
-    "layoutType": "video",
-    "description": "",
-    "info": "",
-    "images": ["image4.jpg", "image5.jpg", "image6.jpg"],
     "coverImage": "",
     "videos":[""],
     "links":""
