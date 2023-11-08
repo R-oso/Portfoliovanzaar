@@ -38,10 +38,6 @@ const Background = () => {
 
           let offsetX = (mouseX - imageCenterX) / 2;
           let offsetY = (mouseY - imageCenterY) / 2;
-
-          // Apply transform
-          image.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-          image.style.transition = "transform 0.4s ease-out";
         } else {
           image.style.transform = `translate(0px, 0px)`;
 
