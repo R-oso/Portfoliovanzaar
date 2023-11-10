@@ -25,9 +25,11 @@ const VideoLayout = (props) => {
           </video>
         )}
 
-        <div>
-          <img className={VideoCSS.cover} src={`/project_images/${cover}`} alt={cover} />
-        </div>
+        <img className={VideoCSS.cover} src={`/project_images/${cover}`} alt={cover} />
+
+        {images.map((image, index) => (
+          <img className={VideoCSS.images} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />
+        ))}
       </section>
 
       {/* <section className={VideoCSS.section_4}>
