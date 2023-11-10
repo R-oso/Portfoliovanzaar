@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import VideoCSS from "./videolayout.module.css";
+import Carousel from "./Carousel";
 
 const VideoLayout = (props) => {
-  const { images, videos, links, carousel, cover } = props.project;
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const { images, videos, links, carousel, cover, name } = props.project;
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   return (
     <section className={VideoCSS.section}>
       <section className={VideoCSS.section_2}>
-        <iframe className={VideoCSS.video} src={videos[0]} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Teaparty_musicvideo"></iframe>
+        <iframe className={VideoCSS.video} src={videos[0]} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title={`Video ${name}`}></iframe>
       </section>
 
       <section className={VideoCSS.section_3}>
-        <img className={VideoCSS.cover} src={`/project_images/${cover}`} alt={cover} />
+        {cover !== "" && <img className={VideoCSS.cover} src={`/project_images/${cover}`} alt={cover} />}
         {carousel !== "" ? (
-          <div />
+          <Carousel images={carousel} />
         ) : (
           // Render the GIF component if 'carousel' is empty
           <video className={VideoCSS.gif} autoPlay muted preload="auto" loop>
@@ -24,9 +25,7 @@ const VideoLayout = (props) => {
           </video>
         )}
 
-        {images.map((image, index) => (
-          <img className={VideoCSS.images} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />
-        ))}
+        {images && images.length > 0 && images.map((image, index) => <img className={VideoCSS.images} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />)}
       </section>
 
       {/* <section className={VideoCSS.section_4}>
