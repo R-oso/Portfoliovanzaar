@@ -22,10 +22,9 @@
 .section_3 {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
-  /* gap: 10px; */
+  gap: 20px;
 }
 
 .video {
@@ -51,14 +50,12 @@
   height: auto;
   object-fit: cover;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .carousel {
   display: flex;
   overflow: hidden;
-  width: 78vw;
-  height: 80vh;
 }
 
 .carouselImage {
@@ -67,10 +64,6 @@
   max-height: 640px;
   height: auto;
   transition: transform 0.5s ease-in-out;
-}
-
-.activeImage {
-  transform: translateX(0);
 }
 
 .par2 {

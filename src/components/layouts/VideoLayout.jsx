@@ -24,7 +24,6 @@ const VideoLayout = (props) => {
             <source src={`/project_videos/${videos[1]}`} />
           </video>
         )}
-
         {images && images.length > 0 && images.map((image, index) => <img className={VideoCSS.images} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />)}
       </section>
 
