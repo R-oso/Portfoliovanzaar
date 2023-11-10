@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "title": "Tea Party Music Video 2022",
+    "title": "Tea Party Music Video 2023",
     "name": "teaparty",
     "layoutType": "video",
     "description": "“Tea party expresses the duality of being a young adult, feeling lost in your 20s yet hearing the inner child’s voice within.”",
     "description2": "Our core concept is to embrace your inner child while balancing your adult side and reflecting on yourself as you grow. In this society, there is a pressure to have everything under control and a clear idea of your future by the time you turn 20. However, while pursuing these expectations, young adults often feel insecure and struggle to hear their inner child’s voices. It is important to remember that societal norms are not set in stone and can be challenged and redefined. With courage and determination, young adults can break free and chart their own unique path in life.",
     "info": "w/ Alexia Vyzaki, Emma O’Neill, Nina Mikulska, Rafaela Waldner - music producer: Luuk Roso - videographer: Dimitri Triantos",
-    "images": ["Teaparty_poster.jpg"],
+    "images": ["Teaparty_poster.jpg", "Teaparty_foto.jpg"],
     "link": "Teaparty_link.png",
     "carousel": "",
     "cover": "Teaparty_cover.png",
-    "videos":["https://player.vimeo.com/video/883223294?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479", "Teaparty_gif.mp4"],
-    "tags": ["Direction", "Concept"]
+    "videos":["https://www.youtube.com/embed/eOntVV_VrDk?si=kKqmWT9KPQlA7htM&amp;controls=0", "Teaparty_gif.mp4"],
+    "tags": ["Direction", "Concept", "Graphic design"]
   },
 
   {
@@ -20,7 +20,7 @@
     "title": "Analog photos",
     "name": "analogphotos",
     "layoutType": "photo",
-    "description": "",
+    "description": "For a school project, I’ve created a campaign against street harassment. Street harassment is still something that is a problem in our society today. Feeling safe while walking down the street should be the norm, not the exception.",
     "info": "2022 project",
     "images": [""],
     "link": "Analog_britt.jpg",
@@ -31,23 +31,22 @@
  
   {
     "id": 3,
-    "title": "Buzzle Puzzle",
+    "title": "Buzzle Puzzle 2022",
     "name": "buzzlepuzzle",
     "layoutType": "video",
-    "description": "What is body language? You could say it is an unconscious and conscious way of communicating our feelings, moods, and behaviors through movements and postures. We see it every day but we can’t always understand it. Trained specialists like psychologists and police officers are working with body language every day and know how the body works. They see our habits with their eyes, they read our body language and make conclusions. Except, not everybody has a trained eye for body language.",
-    "description2": "Everybody has different characteristics and nobody is developed the same.We are all different in social situations, introverts may have a harder time at a party than extroverted people but they will thrive in other situations. It can be difficult because you don’t always understand others well. It is difficult to empathize with how someone else thinks or feels. Conversely, people often do not understand how you experience things. We want to make the things that you usually don’t notice visible and learn more about our body (languages) that we see, feel, and use every day. In this society, the expectations are high and social skills are required. Not everybody can live up to the standards of social interaction. We see our game as a helpful guide to show how a human communicates. Now, this does not mean that all people express their feelings this way, we’re giving a broad direction where there can be speculation and imagination. Our goal is to understand each other better. People can become more confident in expressing themselves and understanding someone else’s feelings. This game is for people who struggle or want to learn more about social situations and how others/you are thinking or feeling. Buzzle puzzle is raising awareness and gives educational insights into human body language.",
-    "info": "",
+    "description": "For a school project, I’ve created a campaign against street harassment. Street harassment is still something that is a problem in our society today. Feeling safe while walking down the street should be the norm, not the exception.",    
+    "info": "w/ Nina Mikulska",
     "images": [""],
     "link": "Buzzle_link.png",
     "carousel": ["Buzzle_foto1.png", "Buzzle_foto2.png", "Buzzle_foto3.png", "Buzzle_foto4.png", "Buzzle_foto5.png", "Buzzle_foto6.png"],
     "coverImage": "Buzzle_cover.png",
-    "videos":[""],
-    "tags": ""
+    "videos":["https://www.youtube.com/embed/yBxBx7iRpHc?si=j5JSJN9ooW4g_-69&amp;controls=0"],
+    "tags": ["Direction", "Concept", "Product design"]
   },
 
   {
     "id": 4,
-    "title": "Street Harassment",
+    "title": "Street Harassment Campaign 2021",
     "name": "streetharassment",
     "layoutType": "basic",
     "description": "",
