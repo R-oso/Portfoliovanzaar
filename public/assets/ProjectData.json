@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "title": "Tea Party",
+    "title": "Tea Party Music Video 2022",
     "name": "teaparty",
     "layoutType": "video",
-    "description": "TeaParty is not just any band, it's a unique concept band composed of five enthusiastic girls. 'Having a cup of tea is like getting a cozy hug, going to a party is like being immersed in chaos; and this is how we feel as TeaParty.",
-    "description2": "Our core concept is to embrace your inner child while balancing your adult side and reflecting on yourself as you grow. In this society, there is a pressure to have everything under control and a clear idea of your future by the time you turn 20. However, while pursuing these expectations, young adults often feel insecure and struggle to hear their inner child's voices. Societal norms dictate how we should behave, including studying hard, getting a job, and settling down in a relationship. While some find comfort in following these norms, they can be restrictive and limThe banit young adults from pursuing their passions. The pressure to conform can be intense, leading to negative opinions and isolation. It is important to remember that societal norms are not set in stone and can be challenged and redefined. Young adults have the power to inspire others and create a more accepting and diverse society. Ultimately, the decision to conform or not is personal, and individuals should stay true to their values and beliefs. With courage and determination, young adults can break free and chart their own unique path in life. Our concept encourages embracing our inner child, being unafraid, and thinking differently.",
+    "description": "“Tea party expresses the duality of being a young adult, feeling lost in your 20s yet hearing the inner child’s voice within.”",
+    "description2": "Our core concept is to embrace your inner child while balancing your adult side and reflecting on yourself as you grow. In this society, there is a pressure to have everything under control and a clear idea of your future by the time you turn 20. However, while pursuing these expectations, young adults often feel insecure and struggle to hear their inner child’s voices. It is important to remember that societal norms are not set in stone and can be challenged and redefined. With courage and determination, young adults can break free and chart their own unique path in life.",
     "info": "2022 Music video \n art direction / production \n",
     "images": ["Teaparty_visual.png", "Teaparty_extras.png", "Teaparty_cover.png"],
     "link": "Teaparty_link.png",
     "carousel": "",
-    "coverImage": "Teaparty_teacup.png",
-    "videos":["Teaparty_musicvideo.mp4", "Teaparty_gif.mp4"],
-    "links":"Listen to our other song on SoundCloud"
+    "cover": "Teaparty_cover.png",
+    "videos":["https://player.vimeo.com/video/883223294?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479", "Teaparty_gif.mp4"],
+    "tags": ["Direction", "Concept"]
   },
 
   {
@@ -26,7 +26,7 @@
     "link": "Analog_britt.jpg",
     "coverImage": "",
     "videos":[""],
-    "links":"Listen to our other song on SoundCloud"
+    "tags": ""
   },
  
   {
@@ -41,8 +41,8 @@
     "link": "Buzzle_link.png",
     "carousel": ["Buzzle_foto1.png", "Buzzle_foto2.png", "Buzzle_foto3.png", "Buzzle_foto4.png", "Buzzle_foto5.png", "Buzzle_foto6.png"],
     "coverImage": "Buzzle_cover.png",
-    "videos":["Buzzle_video.mp4"],
-    "links":""
+    "videos":[""],
+    "tags": ""
   },
 
   {
@@ -56,6 +56,6 @@
     "link": "Street_link.png",
     "coverImage": "",
     "videos":[""],
-    "links":""
+    "tags": ""
   }
 ]
