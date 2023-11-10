@@ -11,7 +11,7 @@
     "link": "Teaparty_link.png",
     "carousel": "",
     "cover": "Teaparty_cover.png",
-    "videos":["https://www.youtube.com/embed/eOntVV_VrDk?si=kKqmWT9KPQlA7htM&amp;controls=0", "Teaparty_gif.mp4"],
+    "videos":["https://www.youtube.com/embed/eOntVV_VrDk?autoplay=1", "Teaparty_gif.mp4"],
     "tags": ["Direction", "Concept", "Graphic design"]
   },
 
@@ -36,11 +36,11 @@
     "layoutType": "video",
     "description": "For a school project, I’ve created a campaign against street harassment. Street harassment is still something that is a problem in our society today. Feeling safe while walking down the street should be the norm, not the exception.",    
     "info": "w/ Nina Mikulska",
-    "images": [""],
+    "images": [],
     "link": "Buzzle_link.png",
-    "carousel": ["Buzzle_foto1.png", "Buzzle_foto2.png", "Buzzle_foto3.png", "Buzzle_foto4.png", "Buzzle_foto5.png", "Buzzle_foto6.png"],
-    "coverImage": "Buzzle_cover.png",
-    "videos":["https://www.youtube.com/embed/yBxBx7iRpHc?si=j5JSJN9ooW4g_-69&amp;controls=0"],
+    "carousel": ["Buzzle_1.png", "Buzzle_2.png", "Buzzle_3.png", "Buzzle_4.png", "Buzzle_5.png", "Buzzle_6.png"],
+    "cover": "",
+    "videos":["https://www.youtube.com/embed/yBxBx7iRpHc?autoplay=1"],
     "tags": ["Direction", "Concept", "Product design"]
   },
 
@@ -48,13 +48,16 @@
     "id": 4,
     "title": "Street Harassment Campaign 2021",
     "name": "streetharassment",
-    "layoutType": "basic",
-    "description": "",
+    "layoutType": "video",
+    "description": "For a school project, I’ve created a campaign against street harassment. Street harassment is still something that is a problem in our society today. Feeling safe while walking down the street should be the norm, not the exception.",
+    "description2": "",
     "info": "2022 project",
-    "images": ["image4.jpg", "image5.jpg", "image6.jpg"],
+    "images": [],
     "link": "Street_link.png",
-    "coverImage": "",
-    "videos":[""],
-    "tags": ""
+    "carousel": "",
+    "cover": "Street_cover.jpg",
+    "videos":["https://www.youtube.com/embed/76ch-RNi0dU?autoplay=1", "Protest_gif.mp4"],
+    "tags": ["Concept"]
   }
 ]
+
