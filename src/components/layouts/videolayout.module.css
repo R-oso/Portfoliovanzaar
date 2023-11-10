@@ -32,6 +32,7 @@
   display: block;
   width: 78vw;
   height: 80vh;
+  border: none;
 }
 
 .cover,
@@ -51,6 +52,25 @@
   object-fit: cover;
   box-sizing: border-box;
   margin-top: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 78vw;
+  height: 80vh;
+}
+
+.carouselImage {
+  width: auto;
+  max-width: 100%;
+  max-height: 640px;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.activeImage {
+  transform: translateX(0);
 }
 
 .par2 {
