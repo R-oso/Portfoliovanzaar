@@ -89,8 +89,12 @@ const Project = () => {
           <p className={projectCSS.par_1}>{description}</p>
           <p className={projectCSS.par_2}>{description2}</p>
         </div>
+
+        <div>
+          <p className={projectCSS.info}>{info}</p>
+        </div>
       </section>
-      {projectContent}
+      <section className={projectCSS.content_section}>{projectContent}</section>
     </section>
   );
 };
