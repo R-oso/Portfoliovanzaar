@@ -26,7 +26,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
   text-align: left;
 }
 
@@ -46,6 +45,19 @@ html {
   justify-content: left;
   flex-wrap: wrap;
   gap: 2px;
+}
+
+.back {
+  margin-top: 1rem;
+  width: 70px;
+  height: auto;
+  margin-left: 70%;
+  max-width: 100%;
+  transition: rotate ease-in-out 0.5s;
+}
+
+.back:hover {
+  rotate: 20deg;
 }
 
 .tags {
@@ -105,20 +117,20 @@ html {
 
 @media screen and (min-width: 400px) {
   html {
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 
 /* Media query for larger screens */
 @media screen and (min-width: 768px) {
   html {
-    font-size: 19px;
+    font-size: 15px;
   }
 }
 
 /* Media query for even larger screens */
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
