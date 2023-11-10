@@ -3,42 +3,33 @@
   src: url("/src/fonts/Helvetica-Light.ttf") format("opentype");
 }
 
+.section {
+  width: 100vw;
+  padding-left: 21%;
+  /* display: flex; */
+}
+
 .section_2 {
-  margin-top: 7vh;
+  box-sizing: border-box;
 }
 
 .section_3 {
   display: flex;
-  justify-content: center;
 }
 
-.section_4 {
-  display: flex;
-  justify-content: center;
-  gap: 2vw;
+.cover {
+  width: 39vw;
+  height: 30vh;
 }
 
-.section_5 {
-  height: 100px;
-  margin-bottom: 35vw;
-}
-
-.image {
+.video {
   display: block;
-  width: 100vw;
-  height: auto;
-}
-
-.images {
-  margin-top: 35vh;
-  margin-bottom: 6vh;
-  width: 31vw;
-  height: auto;
+  width: 78vw;
+  height: 80vh;
 }
 
 .gif {
-  margin-top: 260px;
-  width: 600px;
+  width: 39vw;
   height: auto;
 }
 

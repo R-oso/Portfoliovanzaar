@@ -2,34 +2,63 @@
   width: 100vw;
 }
 
+html {
+  font-size: 17px;
+}
+
 @font-face {
   font-family: "Helvetica_light";
   src: url("/src/fonts/Helvetica-Light.ttf") format("opentype");
 }
 
-.section_1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 2vw;
-}
-
 .title_section {
+  max-width: 18%;
+  width: 100%;
+
+  position: fixed;
   top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 30px;
+
   display: flex;
   flex-direction: column;
-  margin-left: 1.6vw;
-  width: 20vw;
-  position: fixed;
-  font-family: "Helvetica-Light";
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags {
+}
+
+.tag {
+  border: solid black 1px;
+  border-radius: 20px;
+  padding: 0.2rem 0.8rem;
+  font-family: "Helvetica_light";
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  background-color: white;
+  max-width: 100%;
 }
 
 .title {
   text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 200;
-  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 24px;
+  font-family: "Helvetica_light";
 }
 
 .info {
@@ -38,15 +67,13 @@
 }
 
 .description {
-  font-size: 1rem;
-  width: 50vw;
+  font-size: 0.8rem;
   font-weight: 0;
   font-family: "Helvetica_light";
 }
 
 .par_1 {
-  font-size: 1.5em;
-  text-transform: uppercase;
+  font-size: 1em;
   font-family: "Helvetica_light";
 }
 
@@ -63,31 +90,22 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .title_section {
-    width: 100%;
-    position: relative;
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 15px;
   }
-  .section_1 {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 20px;
-  }
-  .description {
-    margin-left: 2vw;
-    width: 90vw;
-  }
+}
 
-  .image_2 {
-    width: 400px;
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 19px;
   }
+}
 
-  .image_2_container {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-  }
-  .par_1 {
-    font-size: 1.2em;
+/* Media query for even larger screens */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 20px;
   }
 }
