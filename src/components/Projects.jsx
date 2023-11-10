@@ -13,7 +13,7 @@ const Projects = () => {
         const response = await fetch("/assets/ProjectData.json");
         if (response.ok) {
           const data = await response.json();
-          setProjectData(data); // Update the state with fetched data
+          setProjectData(data);
         } else {
           console.error("Failed to fetch project data.");
         }

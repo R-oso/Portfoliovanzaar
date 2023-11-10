@@ -18,8 +18,6 @@ const Rightside = ({ rightSideData }) => {
       </div>
     );
   }
-
-  return <div>No data available</div>;
 };
 
 export default Rightside;

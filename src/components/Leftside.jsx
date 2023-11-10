@@ -18,9 +18,6 @@ const Leftside = ({ leftSideData }) => {
       </div>
     );
   }
-
-  // You can provide a fallback UI or handle the case where data is not available
-  return <div>No data available</div>;
 };
 
 export default Leftside;
