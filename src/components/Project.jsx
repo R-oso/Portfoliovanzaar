@@ -93,6 +93,10 @@ const Project = () => {
         <div>
           <p className={projectCSS.info}>{info}</p>
         </div>
+
+        <Link to="/projects">
+          <img className={projectCSS.back} src="/back.png"></img>
+        </Link>
       </section>
       <section className={projectCSS.content_section}>{projectContent}</section>
     </section>
