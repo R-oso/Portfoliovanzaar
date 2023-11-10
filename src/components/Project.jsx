@@ -39,7 +39,7 @@ const Project = () => {
     return <div>Loading...</div>;
   }
 
-  const { id, title, description, description2, coverImage, info } = currentProjectData;
+  const { id, title, description, description2, coverImage, info, tags } = currentProjectData;
 
   // Split the info text into paragraphs based on line breaks
   const infoParagraphs = info.split("\n");
@@ -70,17 +70,21 @@ const Project = () => {
   return (
     <section className={projectCSS.section}>
       <section className={projectCSS.title_section}>
-        <h1 className={projectCSS.title}>{title}</h1>
-        <div className={projectCSS.info}>{renderParagraphs(infoParagraphs, projectCSS.info)}</div>
-        <Link to="/projects">
-          <p>back to projects</p>
-        </Link>
-      </section>
-
-      <section className={projectCSS.section_1}>
-        <div className={projectCSS.image_2_container}>
-          <img className={projectCSS.image_2} src={`/project_images/${coverImage}`} alt={coverImage} />
+        <div className={projectCSS.tags}>
+          {tags && tags.length > 0 && (
+            <ul className={projectCSS.ul}>
+              {tags.map((tag, index) => (
+                <button className={projectCSS.tag} key={index}>
+                  {tag}
+                </button>
+              ))}
+            </ul>
+          )}
         </div>
+        <div>
+          <p className={projectCSS.title}>{title}</p>
+        </div>
+
         <div className={projectCSS.description}>
           <p className={projectCSS.par_1}>{description}</p>
           <p className={projectCSS.par_2}>{description2}</p>

@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import VideoCSS from "./videolayout.module.css";
 
 const VideoLayout = (props) => {
-  const { images, videos, links, carousel } = props.project;
+  const { images, videos, links, carousel, cover } = props.project;
   const [imageLoaded, setImageLoaded] = useState(false);
 
+  console.log(videos[0]);
+
   return (
-    <div>
+    <section className={VideoCSS.section}>
       <section className={VideoCSS.section_2}>
-        <video className={VideoCSS.image} controls>
-          <source src={`/project_videos/${videos[0]}`} />
-        </video>
+        <iframe className={VideoCSS.video} src={videos[0]} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Teaparty_musicvideo"></iframe>
       </section>
 
       <section className={VideoCSS.section_3}>
@@ -24,9 +24,13 @@ const VideoLayout = (props) => {
             <source src={`/project_videos/${videos[1]}`} />
           </video>
         )}
+
+        <div>
+          <img className={VideoCSS.cover} src={`/project_images/${cover}`} alt={cover} />
+        </div>
       </section>
 
-      <section className={VideoCSS.section_4}>
+      {/* <section className={VideoCSS.section_4}>
         {images.map((image, index) => (
           <img className={VideoCSS.images} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />
         ))}
@@ -36,8 +40,8 @@ const VideoLayout = (props) => {
         <a href="https://on.soundcloud.com/uVtGr" className={VideoCSS.links}>
           {links}
         </a>
-      </section>
-    </div>
+      </section> */}
+    </section>
   );
 };
 
