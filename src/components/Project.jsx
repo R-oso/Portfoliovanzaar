@@ -87,7 +87,7 @@ const Project = () => {
 
         <div className={projectCSS.description}>
           <p className={projectCSS.par_1}>{description}</p>
-          <p className={projectCSS.par_2}>{description2}</p>
+          {description2 !== "" && <p className={projectCSS.par_2}>{description2}</p>}
         </div>
 
         <div>

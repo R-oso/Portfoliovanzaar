@@ -7,8 +7,6 @@ const VideoLayout = (props) => {
   const { images, videos, links, carousel, cover } = props.project;
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  console.log(videos[0]);
-
   return (
     <section className={VideoCSS.section}>
       <section className={VideoCSS.section_2}>
@@ -16,6 +14,7 @@ const VideoLayout = (props) => {
       </section>
 
       <section className={VideoCSS.section_3}>
+        <img className={VideoCSS.cover} src={`/project_images/${cover}`} alt={cover} />
         {carousel !== "" ? (
           <div />
         ) : (
@@ -24,8 +23,6 @@ const VideoLayout = (props) => {
             <source src={`/project_videos/${videos[1]}`} />
           </video>
         )}
-
-        <img className={VideoCSS.cover} src={`/project_images/${cover}`} alt={cover} />
 
         {images.map((image, index) => (
           <img className={VideoCSS.images} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />
