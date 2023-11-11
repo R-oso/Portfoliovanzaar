@@ -10,7 +10,7 @@ const Leftside = ({ leftSideData }) => {
           {leftSideData.map((project, index) => (
             <Link key={index} to={`/projects/${project.name}`} state={{ layoutType: project.layoutType }}>
               <div className={projectsCSS.img_container}>
-                <img className={projectsCSS.img} src={`/project_images/${project.link}`} alt={project.title} />
+                <img className={projectsCSS.img} src={`/project_images/${project.link}`} alt={project.title} loading="lazy" />
               </div>
             </Link>
           ))}
