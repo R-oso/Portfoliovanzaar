@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import PhotoCSS from "./PhotoLayout.module.css";
+import PhotoCSS from "./photolayout.module.css";
 
 const PhotoLayout = (props) => {
   const { images, videos, links, carousel, cover, name } = props.project;
