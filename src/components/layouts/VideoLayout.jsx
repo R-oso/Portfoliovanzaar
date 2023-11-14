@@ -10,22 +10,38 @@ const VideoLayout = (props) => {
 
   return (
     <section className={VideoCSS.section}>
-      <section className={VideoCSS.section_2}>
-        <iframe className={VideoCSS.video} src={videos[0]} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title={`Video ${name}`}></iframe>
-      </section>
+      <div className={VideoCSS.wrapper}>
+        <div className={VideoCSS.columns}>
+          <div className={`${VideoCSS.col} ${VideoCSS.video}`}>
+            <iframe className={VideoCSS.iframe} src={videos[0]} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen title={`Video ${name}`}></iframe>
+          </div>
 
-      <section className={VideoCSS.section_3}>
-        {cover !== "" && <img className={VideoCSS.cover} src={`/project_images/${cover}`} alt={cover} />}
-        {carousel !== "" ? (
-          <Carousel images={carousel} />
-        ) : (
-          // Render the GIF component if 'carousel' is empty
-          <video className={VideoCSS.gif} autoPlay muted preload="auto" loop>
-            <source src={`/project_videos/${videos[1]}`} />
-          </video>
-        )}
-        {images && images.length > 0 && images.map((image, index) => <img className={VideoCSS.images} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />)}
-      </section>
+          {carousel !== "" ? (
+            <Carousel images={carousel} />
+          ) : (
+            // Render the GIF component if 'carousel' is empty
+            <div className={`${VideoCSS.col} ${VideoCSS.gif_container}`}>
+              <video className={VideoCSS.gif} autoPlay muted preload="auto" loop>
+                <source src={`/project_videos/${videos[1]}`} />
+              </video>
+            </div>
+          )}
+
+          {cover !== "" && (
+            <div className={`${VideoCSS.col} ${VideoCSS.cover}`}>
+              <img className={`${VideoCSS.image}`} src={`/project_images/${cover}`} alt={cover} />{" "}
+            </div>
+          )}
+
+          {images &&
+            images.length > 0 &&
+            images.map((image, index) => (
+              <div className={`${VideoCSS.col} ${VideoCSS[`image_${index + 1}`]}`}>
+                <img className={VideoCSS.image} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />{" "}
+              </div>
+            ))}
+        </div>
+      </div>
 
       {/* <section className={VideoCSS.section_4}>
         {images.map((image, index) => (
