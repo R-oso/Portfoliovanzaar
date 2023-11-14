@@ -36,7 +36,7 @@ const Project = () => {
 
   if (!currentProjectData) {
     // You can render a loading state or handle the case when data is not available yet
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   const { id, title, description, description2, coverImage, info, tags } = currentProjectData;
