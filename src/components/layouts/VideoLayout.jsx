@@ -37,7 +37,7 @@ const VideoLayout = (props) => {
             images.length > 0 &&
             images.map((image, index) => (
               <div className={`${VideoCSS.col} ${VideoCSS[`image_${index + 1}`]}`}>
-                <img className={VideoCSS.image} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />{" "}
+                <img className={`${VideoCSS.image} ${VideoCSS[`img_${index + 1}`]}`} key={index} src={`/project_images/${image}`} alt={`Image ${index}`} />{" "}
               </div>
             ))}
         </div>
