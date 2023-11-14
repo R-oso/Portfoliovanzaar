@@ -1,3 +1,3 @@
-# React + Vite
+# Zara's portfolio
 
-This template provides a minimal setup to get React working in Vite. Furthermore, Vite and React are combined with Matter.js to create a dynamic front page. All the Matter.js code is inside the 'Logo' component.
+This is the code for zara's portfolio. It is built using react + vite.
