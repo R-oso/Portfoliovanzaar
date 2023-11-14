@@ -20,13 +20,13 @@
     "title": "Analog photos",
     "name": "analogphotos",
     "layoutType": "photo",
-    "description": "For a school project, I’ve created a campaign against street harassment. Street harassment is still something that is a problem in our society today. Feeling safe while walking down the street should be the norm, not the exception.",
+    "description": "I’ve always been interested in photography. For my last birthday, I got my first analogue camera. Now, I’m diving into film photography, learning and experimenting along the way.",
     "info": "2022 project",
-    "images": [""],
+    "images": ["Analog_1.jpg", "Analog_2.jpg", "Analog_3.jpg", "Analog_4.jpg", "Analog_5.jpg", "Analog_6.jpg", "Analog_7.jpg", "Analog_8.jpg", "Analog_9.jpg"],
     "link": "Analog_britt.jpg",
     "coverImage": "",
     "videos":[""],
-    "tags": ""
+    "tags": ["Photography"]
   },
  
   {
@@ -34,7 +34,7 @@
     "title": "Buzzle Puzzle 2022",
     "name": "buzzlepuzzle",
     "layoutType": "video",
-    "description": "For a school project, I’ve created a campaign against street harassment. Street harassment is still something that is a problem in our society today. Feeling safe while walking down the street should be the norm, not the exception.",    
+    "description": "What is body language? You could say it is an unconscious and conscious way of communicating our feelings, moods, and behaviors. We see it every day but we can’t always understand it. Trained specialists like psychologists and police officers are working with body language every day and know how the body works. They see our habits with their eyes, they read our body language and make conclusions. Except, not everybody has a trained eye for body language.",
     "info": "w/ Nina Mikulska",
     "images": [],
     "link": "Buzzle_link.png",
@@ -51,7 +51,7 @@
     "layoutType": "video",
     "description": "For a school project, I’ve created a campaign against street harassment. Street harassment is still something that is a problem in our society today. Feeling safe while walking down the street should be the norm, not the exception.",
     "description2": "",
-    "info": "2022 project",
+    "info": "",
     "images": [],
     "link": "Street_link.png",
     "carousel": "",
