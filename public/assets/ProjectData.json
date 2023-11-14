@@ -7,7 +7,7 @@
     "description": "“Tea party expresses the duality of being a young adult, feeling lost in your 20s yet hearing the inner child’s voice within.”",
     "description2": "Our core concept is to embrace your inner child while balancing your adult side and reflecting on yourself as you grow. In this society, there is a pressure to have everything under control and a clear idea of your future by the time you turn 20. However, while pursuing these expectations, young adults often feel insecure and struggle to hear their inner child’s voices. It is important to remember that societal norms are not set in stone and can be challenged and redefined. With courage and determination, young adults can break free and chart their own unique path in life.",
     "info": "w/ Alexia Vyzaki, Emma O’Neill, Nina Mikulska, Rafaela Waldner - music producer: Luuk Roso - videographer: Dimitri Triantos",
-    "images": ["Teaparty_poster.jpg", "Teaparty_foto.jpg"],
+    "images": ["Teaparty_foto.jpg", "Teaparty_poster.jpg"],
     "link": "Teaparty_link.png",
     "carousel": "",
     "cover": "Teaparty_cover.png",
@@ -17,7 +17,7 @@
 
   {
     "id": 2,
-    "title": "Analog photos",
+    "title": "Analog photography",
     "name": "analogphotos",
     "layoutType": "photo",
     "description": "I’ve always been interested in photography. For my last birthday, I got my first analogue camera. Now, I’m diving into film photography, learning and experimenting along the way.",
