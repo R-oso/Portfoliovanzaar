@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import projectsCSS from "../css/projects.module.css";
 import { Link } from "react-router-dom";
 
@@ -8,11 +8,13 @@ const Rightside = ({ rightSideData }) => {
       <div className={projectsCSS.side}>
         <div className={projectsCSS.flex_container}>
           {rightSideData.map((project, index) => (
-            <Link key={index} to={`/projects/${project.name}`} state={{ layoutType: project.layoutType }}>
-              <div className={projectsCSS.img_container}>
-                <img className={projectsCSS.img} src={`/project_images/${project.link}`} alt={project.title} loading="lazy" />
-              </div>
-            </Link>
+            <Suspense>
+              <Link key={index} to={`/projects/${project.name}`} state={{ layoutType: project.layoutType }}>
+                <div className={projectsCSS.img_container}>
+                  <img className={projectsCSS.img} src={`/project_images/${project.link}`} alt={project.title} />
+                </div>
+              </Link>
+            </Suspense>
           ))}
         </div>
       </div>
