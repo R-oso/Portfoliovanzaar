@@ -5,31 +5,48 @@ import VideoCSS from "./videolayout.module.css";
 import Carousel from "./Carousel";
 
 const VideoLayout = (props) => {
-  const { images, videos, links, carousel, cover, name } = props.project;
+  const { images, videos, links, carousel, cover, name, sameWidth } = props.project;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showAuraCursor, setShowAuraCursor] = useState(true);
+  const auraCursor = document.querySelector(".aura_cursor");
+
+  const handleIframeMouseEnter = () => {
+    setShowAuraCursor(false); // Hide the aura cursor when hovering over the iframe
+  };
+
+  const handleIframeMouseLeave = () => {
+    setShowAuraCursor(true); // Show the aura cursor when leaving the iframe
+  };
+
+  useEffect(() => {
+    if (auraCursor == false) {
+      setShowAuraCursor(false);
+      auraCursor.style.display = "none"; // Hide the aura cursor when hovering over the iframe
+    }
+  }, [handleIframeMouseEnter]);
 
   return (
     <section className={VideoCSS.section}>
       <div className={VideoCSS.wrapper}>
         <div className={VideoCSS.columns}>
           <div className={`${VideoCSS.col} ${VideoCSS.video}`}>
-            <iframe className={VideoCSS.iframe} src={videos[0]} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen title={`Video ${name}`}></iframe>
+            <iframe className={VideoCSS.iframe} src={videos[0]} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen title={`Video ${name}`} onMouseEnter={handleIframeMouseEnter} onMouseLeave={handleIframeMouseLeave}></iframe>
           </div>
 
           {carousel !== "" ? (
             <Carousel images={carousel} />
           ) : (
             // Render the GIF component if 'carousel' is empty
-            <div className={`${VideoCSS.col} ${VideoCSS.gif_container}`}>
-              <video className={VideoCSS.gif} autoPlay muted preload="auto" loop>
+            <div className={`${VideoCSS.col} ${VideoCSS.gif_container} ${sameWidth ? VideoCSS.sameWidthContainer1 : ""} }`}>
+              <video className={`${VideoCSS.gif} ${sameWidth ? VideoCSS.sameWidthImage : ""}`} autoPlay muted preload="auto" loop>
                 <source src={`/project_videos/${videos[1]}`} />
               </video>
             </div>
           )}
 
           {cover !== "" && (
-            <div className={`${VideoCSS.col} ${VideoCSS.cover}`}>
-              <img className={`${VideoCSS.image}`} src={`/project_images/${cover}`} alt={cover} />{" "}
+            <div className={`${VideoCSS.col} ${VideoCSS.cover} ${sameWidth ? VideoCSS.sameWidthContainer2 : ""}`}>
+              <img className={`${VideoCSS.image} ${sameWidth ? VideoCSS.sameWidthImage : ""}`} src={`/project_images/${cover}`} alt={cover} />{" "}
             </div>
           )}
 

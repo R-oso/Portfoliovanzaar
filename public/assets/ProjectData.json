@@ -11,6 +11,7 @@
     "link": "Teaparty_link.png",
     "carousel": "",
     "cover": "Teaparty_cover.png",
+    "sameWidth": false,
     "videos":["https://www.youtube.com/embed/eOntVV_VrDk?autoplay=1", "Teaparty_gif.mp4"],
     "tags": ["Direction", "Concept", "Graphic design"]
   },
@@ -24,7 +25,6 @@
     "info": "2022 project",
     "images": ["Analog_1.jpg", "Analog_2.jpg", "Analog_3.jpg", "Analog_4.jpg", "Analog_5.jpg", "Analog_6.jpg", "Analog_7.jpg", "Analog_8.jpg", "Analog_9.jpg"],
     "link": "Analog_britt.jpg",
-    "coverImage": "",
     "videos":[""],
     "tags": ["Photography"]
   },
@@ -40,6 +40,7 @@
     "link": "Buzzle_link.png",
     "carousel": ["Buzzle_1.png", "Buzzle_2.png", "Buzzle_3.png", "Buzzle_4.png", "Buzzle_5.png", "Buzzle_6.png"],
     "cover": "",
+    "sameWidth": false,
     "videos":["https://www.youtube.com/embed/yBxBx7iRpHc?autoplay=1"],
     "tags": ["Direction", "Concept", "Product design"]
   },
@@ -56,6 +57,7 @@
     "link": "Street_link.png",
     "carousel": "",
     "cover": "Street_cover.jpg",
+    "sameWidth": true,
     "videos":["https://www.youtube.com/embed/76ch-RNi0dU?autoplay=1", "Protest_gif.mp4"],
     "tags": ["Concept"]
   }
