@@ -35,7 +35,7 @@
   color: #f4dade;
   margin-left: 2vw;
   outline: none;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .link:hover {
