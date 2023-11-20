@@ -68,3 +68,41 @@
   text-align: left;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .side {
+    display: block;
+    overflow-y: scroll;
+    overflow-x: visible;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+  }
+
+  .flex_container {
+    display: block;
+    align-items: center; /* Center items on mobile */
+  }
+
+  .img_container {
+    width: 100%;
+    height: auto;
+  }
+
+  .return_image {
+    display: none;
+  }
+
+  .p {
+    text-align: center;
+    margin: 15px 0px 25px 0px;
+  }
+
+  .img {
+    width: 80%;
+  }
+}
