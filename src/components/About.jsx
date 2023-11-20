@@ -13,11 +13,18 @@ const About = () => {
           <img src="/shapeprojectpage.png" alt="Absolute Positioned Image" className={AboutCSS.return_image} />
         </Link> */}
         <div className={AboutCSS.text_container}>
-          <p>I love to see and observe what is happening around us. Finding the hidden things in our world and visualizing it to educate, create awareness and inspire. I believe everyone has interesting stories to tell, with my works I try to tell these story’s. Through sharing stories, visions and skills and new concepts ideas get created.</p>
-          <p>If you want to collaborate or have a chat please contact me.</p>
+          <p>I love to see and observe what is happening around us. Finding the hidden things in our world and visualizing them to educate, create awareness and inspire. I believe everyone has interesting stories to tell. With my works, I try to showcase these stories. Through sharing stories, visions, skills and concepts new ideas get created.</p>
+          <p className={AboutCSS.collab}>If you want to collaborate or have a chat, please contact me &lt;3 </p>
           <div className={AboutCSS.contact_container}>
-            <p>ZARAVKR@OUTLOOK.COM</p>
-            <p></p>
+            <a className={AboutCSS.contact} href="mailto:Zaravkr@outlook.com">
+              CONTACT
+            </a>
+            <a className={AboutCSS.contact} href="https://www.instagram.com/zarakriek/">
+              INSTAGRAM
+            </a>
+            <a className={AboutCSS.contact} href="https://www.linkedin.com/in/zara-van-kriekingen-9428a1210/">
+              LINKEDIN
+            </a>
           </div>
         </div>
       </div>

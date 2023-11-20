@@ -11,6 +11,7 @@
 .flex_container {
   display: flex;
   text-align: left;
+  align-items: flex-start;
   /* height: 100%; */
 }
 
@@ -31,10 +32,10 @@
   display: flex;
   flex-direction: column;
   width: 50vw;
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding: 20px;
   padding-right: 6%;
-  margin-top: 40px;
+  margin-top: 85px;
   gap: 30px;
   font-family: "Helvetica_light";
 }
@@ -55,10 +56,26 @@
 }
 
 .contact_container {
-  margin-top: 30px;
+  margin-top: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
   font-size: 0.7em;
+}
+
+.contact {
+  text-decoration: none;
+  color: black;
+  transition: color ease-in-out 200ms;
+}
+
+.contact:hover {
+  color: red;
+}
+
+.collab {
+  font-size: 0.75em;
 }
 
 @media screen and (max-width: 860px) {
@@ -72,12 +89,17 @@
   }
 
   .image {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
   }
 
   .text_container {
-    width: 80%;
+    font-size: 1.5em;
+    width: 100%;
     justify-content: center;
+  }
+
+  .contact_container {
+    margin-top: 40px;
   }
 }
