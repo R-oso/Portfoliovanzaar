@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Helvetica_light";
+  src: url("/src/fonts/Helvetica-Light.ttf") format("opentype");
+}
+
 .section {
   display: flex;
   width: 100vw;
@@ -16,7 +21,7 @@
 .flex_container {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
   margin-bottom: 40px;
 }
 
@@ -46,4 +51,20 @@
 
 .return_image:hover {
   filter: drop-shadow(20px 20px 20px gray);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  justify-self: flex-start;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  text-align: left;
+  text-transform: uppercase;
 }
