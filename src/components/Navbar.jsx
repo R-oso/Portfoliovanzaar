@@ -40,11 +40,6 @@ const Navbar = ({ onLinkClick, matterContainerRef }) => {
             ABOUT
           </Link>
         </li>
-        {/* <li>
-        <TestLink to="/test" onClick={() => onLinkClick()} ref={matterContainerRef}>
-          Test voor luukje
-        </TestLink>
-      </li> */}
       </ul>
     </div>
   );

@@ -49,10 +49,9 @@
   color: #f4dade;
   margin: 0;
   margin-top: 7vh;
-  margin-left: 3vw;
-  width: 600px;
+  margin-left: 45vw;
+  width: 55vw;
   height: 10px;
-  transform: translate(130%);
 }
 
 .title:hover {
@@ -70,4 +69,11 @@
 
 .link:focus {
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+    margin-left: 30vw;
+  }
 }
