@@ -32,13 +32,13 @@ const Projects = () => {
 
   return (
     <section className={projectsCSS.section}>
-      <Leftside leftSideData={leftSideData} />
+      <Leftside className={projectsCSS.leftside} leftSideData={leftSideData} />
 
       <Link to="/">
         <img src="/shapeprojectpage.png" alt="Absolute Positioned Image" className={projectsCSS.return_image} />
       </Link>
 
-      <Rightside rightSideData={rightSideData} />
+      <Rightside className={projectsCSS.rightside} rightSideData={rightSideData} />
     </section>
   );
 };
