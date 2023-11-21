@@ -69,3 +69,31 @@
 .image_9 {
   width: calc(50% - 5px);
 }
+
+@media screen and (max-width: 870px) {
+  .section {
+    width: 100vw;
+  }
+
+  .columns {
+    flex-direction: column;
+
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .image_1,
+  .image_2,
+  .image_3,
+  .image_4,
+  .image_5,
+  .image_6,
+  .image_7,
+  .image_8,
+  .image_9 {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

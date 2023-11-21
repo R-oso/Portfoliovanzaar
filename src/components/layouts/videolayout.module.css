@@ -122,3 +122,50 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 870px) {
+  .section {
+    width: 100vw;
+  }
+
+  .video {
+    height: 80vh;
+    width: 100%;
+    border: none;
+  }
+
+  .iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    cursor: none;
+  }
+
+  .columns {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cover {
+    width: 90%;
+    height: auto;
+  }
+
+  .gif_container {
+    width: 90%;
+    height: auto;
+  }
+
+  .image_1 {
+    width: 90%;
+    height: auto;
+  }
+
+  .image_2 {
+    width: 90%;
+    height: auto;
+    margin-top: 0;
+  }
+}
